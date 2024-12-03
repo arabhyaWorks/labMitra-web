@@ -1,5 +1,6 @@
 import React from 'react';
 import { Download, Star, Shield, Smartphone } from 'lucide-react';
+import Lab1 from '../Lab1.png';
 
 interface AppDownloadProps {
   language: 'en' | 'hi';
@@ -59,11 +60,13 @@ const AppDownload: React.FC<AppDownloadProps> = ({ language }) => {
     <section className="py-20 bg-white">
       <div className="container mx-auto px-4">
         <div className="flex flex-col lg:flex-row items-center gap-12">
-          <div className="lg:w-1/2">
+          <div 
+          // className="lg:w-3/4"
+          >
             <img
-              src="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?auto=format&fit=crop&q=80"
+              src={Lab1}
               alt="Lab Mitra App"
-              className="w-full max-w-md mx-auto rounded-3xl shadow-2xl"
+              className="w-full max-w-md mx-auto rounded-3xl shadow-sm"
             />
           </div>
           
@@ -98,9 +101,9 @@ const AppDownload: React.FC<AppDownloadProps> = ({ language }) => {
                 <Download className="w-5 h-5 mr-2" />
                 {content[language].downloadText}
               </button>
-              <p className="text-sm text-gray-500 text-center">
-                {content[language].availableText}
-              </p>
+              {/* <p className="text-sm text-gray-500 text-center">
+                {content[language].availableText} */}
+              {/* </p> */}
             </div>
           </div>
         </div>

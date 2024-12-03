@@ -1,5 +1,6 @@
 import React from 'react';
 import { TestTube2 } from 'lucide-react';
+import logo from '../logo1.png';
 
 interface NavbarProps {
   language: 'en' | 'hi';
@@ -20,9 +21,14 @@ const Navbar: React.FC<NavbarProps> = ({ language }) => {
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16">
           <div className="flex items-center">
-            <TestTube2 className="h-8 w-8 text-purple-600" />
-            <span className="ml-2 text-xl font-bold text-gray-900">Lab Mitra</span>
-            <span className="ml-2 text-sm text-gray-600">Varanasi</span>
+            {/* <TestTube2 className="h-8 w-8 text-purple-600" /> */}
+            <img
+              src={logo}
+              alt="Lab Mitra App"
+              className='h-12 '
+            />
+            {/* <span className="ml-2 text-xl font-bold text-gray-900">Lab Mitra</span>
+            <span className="ml-2 text-sm text-gray-600">Varanasi</span> */}
           </div>
           
           <div className="hidden md:flex items-center space-x-8">

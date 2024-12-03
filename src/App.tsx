@@ -9,6 +9,7 @@ import AppDownload from './components/AppDownload';
 import MediaSection from './components/MediaSection';
 import Footer from './components/Footer';
 import AwardsShowcase from './components/AwardsShowcase';
+import img1 from './img1.png';
 
 function App() {
   const [language, setLanguage] = useState<'en' | 'hi'>('en');
@@ -73,9 +74,9 @@ function App() {
         
         <div className="lg:w-1/2 mt-12 lg:mt-0">
           <img
-            src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?auto=format&fit=crop&q=80"
-            alt="Healthcare professionals"
-            className="rounded-lg shadow-xl"
+            src={img1}
+            alt="Lab Mitra"
+            className="rounded-lg shadow-sm"
           />
         </div>
       </section>

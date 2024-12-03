@@ -13,56 +13,56 @@ const MediaSection: React.FC<MediaSectionProps> = ({ language }) => {
       viewAll: 'View All News',
       news: [
         {
-          image: 'https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&q=80',
-          date: 'March 15, 2024',
-          source: 'Times of India',
+          image: 'https://pbs.twimg.com/media/GWiywDDaoAI-RDZ?format=jpg&name=4096x4096',
+          date: 'Sept 03, 2024',
+          source: 'DARPG',
           title: 'Lab Mitra: Revolutionizing Healthcare in Varanasi',
-          excerpt: 'The innovative digital platform is transforming how citizens access their medical test results.'
+          excerpt: 'Lab Mitra of District Administration, Varanasi, Government of Uttar Pradesh bagged Gold Award.'
         },
         {
-          image: 'https://images.unsplash.com/photo-1581093458791-4b041a98425f?auto=format&fit=crop&q=80',
-          date: 'February 28, 2024',
-          source: 'Hindustan Times',
-          title: 'Digital Healthcare Initiative Wins National Recognition',
+          image: 'https://pbs.twimg.com/media/GWmoaJDbQAAncYH.jpg',
+          date: 'Sept 04, 2024',
+          source: 'Times of India',
+          title: 'Varanasi Lab Mitra initiative bags award',
           excerpt: 'Lab Mitra\'s groundbreaking approach to healthcare accessibility earns prestigious award.'
         },
         {
-          image: 'https://images.unsplash.com/photo-1579684385127-1ef15d508118?auto=format&fit=crop&q=80',
-          date: 'January 20, 2024',
-          source: 'Dainik Jagran',
-          title: 'Lab Mitra: A Game-Changer in Healthcare Delivery',
-          excerpt: 'How a local initiative is making waves in digital healthcare transformation.'
+          image: 'https://www.hindustantimes.com/ht-img/img/2024/06/06/550x309/For-representation-only--HT-File-Photo-_1717693213050.jpg',
+          date: 'Jun 06, 2024',
+          source: 'Hindustan Times',
+          title: 'Lab Mitra: After Varanasi success, path reports software to cater to UP',
+          excerpt: 'Uttar Pradesh patients will not have to visit pathology centres of government hospitals to get their medical test report.'
         }
       ]
     },
     hi: {
-      title: 'मीडिया में लैब मित्र',
-      subtitle: 'देखें कैसे हम वाराणसी में स्वास्थ्य सेवा वितरण को बदल रहे हैं',
+      title: 'समाचारों में लैब मित्र',
+      subtitle: 'देखें कि कैसे हम वाराणसी में स्वास्थ्य सेवाओं को बदल रहे हैं',
       viewAll: 'सभी समाचार देखें',
       news: [
         {
-          image: 'https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&q=80',
-          date: '15 मार्च, 2024',
+          image: 'https://pbs.twimg.com/media/GWiywDDaoAI-RDZ?format=jpg&name=4096x4096',
+          date: '03 सितम्बर, 2024',
+          source: 'DARPG',
+          title: 'लैब मित्र: वाराणसी में स्वास्थ्य सेवाओं में क्रांति',
+          excerpt: 'वाराणसी जिला प्रशासन, उत्तर प्रदेश सरकार की लैब मित्र पहल को गोल्ड अवॉर्ड मिला।'
+        },
+        {
+          image: 'https://pbs.twimg.com/media/GWmoaJDbQAAncYH.jpg',
+          date: '04 सितम्बर, 2024',
           source: 'टाइम्स ऑफ इंडिया',
-          title: 'लैब मित्र: वाराणसी में स्वास्थ्य सेवा में क्रांति',
-          excerpt: 'नवीन डिजिटल प्लेटफॉर्म नागरिकों की मेडिकल टेस्ट रिपोर्ट तक पहुंच को बदल रहा है।'
+          title: 'वाराणसी की लैब मित्र पहल ने पुरस्कार जीता',
+          excerpt: 'स्वास्थ्य सेवाओं को सुलभ बनाने के लैब मित्र के अनूठे दृष्टिकोण को प्रतिष्ठित पुरस्कार प्राप्त हुआ।'
         },
         {
-          image: 'https://images.unsplash.com/photo-1581093458791-4b041a98425f?auto=format&fit=crop&q=80',
-          date: '28 फरवरी, 2024',
+          image: 'https://www.hindustantimes.com/ht-img/img/2024/06/06/550x309/For-representation-only--HT-File-Photo-_1717693213050.jpg',
+          date: '06 जून, 2024',
           source: 'हिंदुस्तान टाइम्स',
-          title: 'डिजिटल हेल्थकेयर पहल को मिली राष्ट्रीय मान्यता',
-          excerpt: 'लैब मित्र की अभिनव पहल को मिला प्रतिष्ठित पुरस्कार।'
-        },
-        {
-          image: 'https://images.unsplash.com/photo-1579684385127-1ef15d508118?auto=format&fit=crop&q=80',
-          date: '20 जनवरी, 2024',
-          source: 'दैनिक जागरण',
-          title: 'लैब मित्र: स्वास्थ्य सेवा वितरण में गेम-चेंजर',
-          excerpt: 'कैसे एक स्थानीय पहल डिजिटल हेल्थकेयर में क्रांति ला रही है।'
+          title: 'लैब मित्र: वाराणसी की सफलता के बाद, यूपी में सॉफ्टवेयर रिपोर्ट करेगा',
+          excerpt: 'उत्तर प्रदेश के मरीजों को अब अपनी मेडिकल टेस्ट रिपोर्ट प्राप्त करने के लिए सरकारी अस्पतालों के पैथोलॉजी केंद्रों पर जाने की जरूरत नहीं पड़ेगी।'
         }
       ]
-    }
+    },
   };
 
   return (
