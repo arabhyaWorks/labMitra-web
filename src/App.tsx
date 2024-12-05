@@ -9,6 +9,7 @@ import ProcessSteps from "./components/ProcessSteps";
 import Awards from "./components/Awards";
 import AppDownload from "./components/AppDownload";
 import MediaSection from "./components/MediaSection";
+import ImportantLinks from "./components/ImportantLinks.tsx";
 import Footer from "./components/Footer";
 import AwardsShowcase from "./components/AwardsShowcase";
 import DownloadReport from "./pages/DownloadReport";
@@ -71,10 +72,6 @@ const HomePage = ({ language }) => {
               <Download className="w-5 h-5 mr-2" />
               {content[language].hero.cta.report}
             </button>
-            {/* <button className="flex items-center justify-center px-6 py-3 border border-purple-600 text-purple-600 rounded-lg hover:bg-purple-50 transition">
-              <MapPin className="w-5 h-5 mr-2" />
-              {content[language].hero.cta.center}
-            </button> */}
           </div>
         </div>
 
@@ -88,7 +85,7 @@ const HomePage = ({ language }) => {
       <AwardsShowcase language={language} />
       <AppDownload language={language} />
       <MediaSection language={language} />
-      <Awards language={language} />
+      <ImportantLinks language={language} />
     </div>
   );
 };
