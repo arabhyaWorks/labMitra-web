@@ -38,19 +38,19 @@ const ImportantLinks: React.FC<ImportantLinksProps> = ({ language }) => {
         {
           title: 'राष्ट्रीय क्षय रोग उन्मूलन कार्यक्रम',
           description: 'टीबी संबंधित स्वास्थ्य सेवाओं और जानकारी तक पहुंच',
-          image: 'https://nikshay.in/assets/images/nikshay-logo.png',
+          image: 'https://labmitravns.com/frontendassets/images/imp3.jpeg',
           url: 'https://nikshay.in/'
         },
         {
           title: 'एकीकृत रोग निगरानी मंच',
           description: 'व्यापक रोग निगरानी और रिपोर्टिंग प्रणाली',
-          image: 'https://labs.udsp.in/assets/images/udsp-logo.png',
+          image: 'https://labmitravns.com/frontendassets/images/imp2.jpeg',
           url: 'https://labs.udsp.in/'
         },
         {
           title: 'आयुष्मान भारत स्वास्थ्य खाता',
           description: 'अपना ABHA स्वास्थ्य आईडी बनाएं और प्रबंधित करें',
-          image: 'https://abha.abdm.gov.in/assets/images/abha-logo.png',
+          image: 'https://labmitravns.com/frontendassets/images/imp1.jpeg',
           url: 'https://abha.abdm.gov.in/abha/v3/'
         }
       ]
