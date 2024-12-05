@@ -97,7 +97,9 @@ const AppDownload: React.FC<AppDownloadProps> = ({ language }) => {
             </div>
             
             <div className="space-y-4">
-              <button className="w-full sm:w-auto flex items-center justify-center px-8 py-4 bg-purple-600 text-white rounded-lg hover:bg-purple-700 transition">
+              <button onClick={() => {
+              window.open('https://play.google.com/store/apps/details?id=com.labmitra', '_blank');
+            }} className="w-full sm:w-auto flex items-center justify-center px-8 py-4 bg-purple-600 text-white rounded-lg hover:bg-purple-700 transition">
                 <Download className="w-5 h-5 mr-2" />
                 {content[language].downloadText}
               </button>

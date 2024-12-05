@@ -12,11 +12,11 @@ const Footer: React.FC<FooterProps> = ({ language }) => {
       contact: 'Contact',
       links: 'Quick Links',
       address: 'Address',
-      copyright: '© 2024 Lab Mitra. All rights reserved.',
+      copyright: '© 2024 Lab Mitra. All rights reserved. Designed & Developed by 3i Consulting PVT LTD.',
       contactInfo: {
-        phone: '1800-XXX-XXXX',
-        email: 'support@labmitra.gov.in',
-        location: 'District Health Department, Varanasi'
+        phone: '+91 9415301513',
+        email: 'cmo.varanasi2014@gmail.com',
+        location: `Kabir Nagar, Upendra Nagar \n Colony, Varanasi, 221005`
       },
       quickLinks: ['About Us', 'Find Centers', 'Privacy Policy', 'Terms of Use']
     },
@@ -25,11 +25,11 @@ const Footer: React.FC<FooterProps> = ({ language }) => {
       contact: 'संपर्क',
       links: 'त्वरित लिंक',
       address: 'पता',
-      copyright: '© 2024 लैब मित्र। सर्वाधिकार सुरक्षित।',
+      copyright: '© 2024 लैब मित्र। सर्वाधिकार सुरक्षित। 3i Consulting PVT LTD. द्वारा डिजाइन और विकसित किया गया है।',
       contactInfo: {
-        phone: '1800-XXX-XXXX',
-        email: 'support@labmitra.gov.in',
-        location: 'जिला स्वास्थ्य विभाग, वाराणसी'
+        phone: '+91 9415301513',
+        email: 'cmo.varanasi2014@gmail.com',
+        location: 'कबीर नगर रोड, उपेंद्र नगर कॉलोनी, वाराणसी, 221005'
       },
       quickLinks: ['हमारे बारे में', 'केंद्र खोजें', 'गोपनीयता नीति', 'उपयोग की शर्तें']
     }
@@ -41,7 +41,9 @@ const Footer: React.FC<FooterProps> = ({ language }) => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
           <div>
             <h3 className="text-lg font-semibold mb-4">{content[language].download}</h3>
-            <button className="flex items-center px-6 py-3 bg-purple-600 text-white rounded-lg hover:bg-purple-700 transition">
+            <button onClick={() => {
+              window.open('https://play.google.com/store/apps/details?id=com.labmitra', '_blank');
+            }} className="flex items-center px-6 py-3 bg-purple-600 text-white rounded-lg hover:bg-purple-700 transition">
               <Download className="w-5 h-5 mr-2" />
               {content[language].download}
             </button>
@@ -59,7 +61,7 @@ const Footer: React.FC<FooterProps> = ({ language }) => {
                 <span>{content[language].contactInfo.email}</span>
               </div>
               <div className="flex items-center">
-                <MapPin className="w-5 h-5 text-purple-600 mr-2" />
+                <MapPin className="w-8 h-8 text-purple-600 mr-2" />
                 <span>{content[language].contactInfo.location}</span>
               </div>
             </div>
