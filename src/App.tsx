@@ -67,7 +67,7 @@ const HomePage = ({ language }) => {
   return (
     <div className="flex-grow">
       {/* Hero Section */}
-      <section className="container mx-auto px-4 py-16 flex flex-col lg:flex-row items-center">
+      <section className="container mx-auto px-4 py-16 flex flex-col lg:flex-row items-center 2xl:px-20">
         <div className="lg:w-1/2 space-y-6">
           <div className="inline-flex items-center bg-purple-50 px-4 py-2 rounded-full">
             <Award className="w-5 h-5 text-purple-600 mr-2" />

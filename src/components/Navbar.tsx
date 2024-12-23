@@ -35,7 +35,7 @@ const Navbar: React.FC<NavbarProps> = ({ language }) => {
             />
           </Link>
           
-          <div className="hidden md:flex items-center space-x-8">
+          <div className="hidden md:flex items-center space-x-8 mr-20">
             {content[language].menu.slice(0, -1).map((item, index) => (
               <Link
                 key={index}
