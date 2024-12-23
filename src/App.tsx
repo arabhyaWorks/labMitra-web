@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
 import { Award, Download, MapPin } from "lucide-react";
@@ -43,6 +43,26 @@ const content = {
 };
 
 const HomePage = ({ language }) => {
+  useEffect(() => {
+    const myHeaders = new Headers();
+    myHeaders.append("Cookie", "ci_session=o4q5j9aie085sdna94nu1lgs4q58bkm0");
+
+    const formdata = new FormData();
+    formdata.append("mno", "9452624111");
+    formdata.append("token", "sanpreetsanindia");
+
+    // const requestOptions = ;
+
+    fetch("https://labmitravns.com/api/reports/getpatientreport", {
+      method: "POST",
+      headers: myHeaders,
+      body: formdata,
+      redirect: "follow",
+    })
+      .then((response) => response.text())
+      .then((result) => console.log(result))
+      .catch((error) => console.error(error));
+  }, []);
   const navigate = useNavigate();
   return (
     <div className="flex-grow">

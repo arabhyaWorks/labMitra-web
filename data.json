@@ -1,0 +1,13 @@
+{
+    "status": 1,
+    "data": [
+        {
+            "Id": "269328",
+            "PTestCode":"Pandit Deendayal Upadhyay District Hospital(DDU)20241001269328","test_type":"","Pname":"","Page":"","Pnum":"9452624111","email":"","report":"upload\/241001\/PDDUH\/Pandit_Deendayal_Upadhyay_District_Hospital_(DDU)20241001269328PCV002_260436418_9452624111.pdf","Pgender":"0","Status":"3","create_at":"2024-10-01
+18: 09: 08","update_at":"0000-00-00
+00: 00: 00","CreatedBy":"PDDUH","phc_hos_id":"40","role_id":"4","is_deleted":"0"},{"Id":"269329","PTestCode":"Pandit
+Deendayal Upadhyay District Hospital
+(DDU)20241001269329","test_type":"","Pname":"","Page":"","Pnum":"9452624111","email":"","report":"upload\/241001\/PDDUH\/Pandit_Deendayal_Upadhyay_District_Hospital_(DDU)20241001269329PCV002_260436305_9452624111.pdf","Pgender":"0","Status":"3","create_at":"2024-10-01
+18: 09: 11","update_at":"0000-00-00
+00: 00: 00","CreatedBy":"PDDUH","phc_hos_id":"40","role_id":"4","is_deleted":"0"}],"msg":"Patient details fetched
+successfully."}

@@ -78,20 +78,41 @@ const ReportForm: React.FC<ReportFormProps> = ({ language }) => {
 
     setLoading(true);
 
-    try {
-      const data = await getReport(formData.contactNumber);
-      if (data.status) {
-        toast.success("Report fetched successfully!");
-        console.log("Report Data:", data);
-        // Handle report data
-      } else {
-        toast.error(content[language].errors.noReport);
-      }
-    } catch (error) {
-      toast.error(content[language].errors.fetchError);
-    } finally {
-      setLoading(false);
-    }
+    // try {
+    //   const data = await getReport(formData.contactNumber);
+    //   if (data.status) {
+    //     toast.success("Report fetched successfully!");
+    //     console.log("Report Data:", data);
+    //     // Handle report data
+    //   } else {
+    //     toast.error(content[language].errors.noReport);
+    //   }
+    // } catch (error) {
+    //   toast.error(content[language].errors.fetchError);
+    // } finally {
+    //   setLoading(false);
+    // }
+
+    const myHeaders = new Headers();
+    myHeaders.append("Cookie", "ci_session=o4q5j9aie085sdna94nu1lgs4q58bkm0");
+
+    const formdata = new FormData();
+    formdata.append("mno", formData.contactNumber);
+    formdata.append("token", "sanpreetsanindia");
+
+    fetch("https://labmitravns.com/api/reports/getpatientreport", {
+      method: "POST",
+      headers: myHeaders,
+      body: formdata,
+      redirect: "follow",
+    })
+      .then((response) => {
+        setLoading(false);
+        return response.json();
+      })
+      .then((result) => console.log(result))
+      .catch((error) => console.error(error))
+      .finally(() => setLoading(false));
   };
 
   const handleReset = () => {
